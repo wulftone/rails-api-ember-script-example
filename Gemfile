@@ -6,7 +6,7 @@ gem 'rails-api'
 gem 'ember_script-rails', github: 'ghempton/ember-script-rails'
 gem 'ember-rails', github: 'emberjs/ember-rails'
 
-gem 'thin'
+gem 'puma'
 gem 'active_model_serializers', github: 'rails-api/active_model_serializers'
 
 group :development, :test do
