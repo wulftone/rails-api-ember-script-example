@@ -2,11 +2,7 @@
 //= require boilerplate
 //= require_tree .
 
-$background-color: hsl(40, 61%, 60%)
-$box-color: hsl(124, 50%, 80%)
-$button-color: hsl(124, 50%, 20%)
-$border-color: hsl(122, 100%, 27%) 2px solid
-$shadow: 0 0 7px 0px black
+@import 'vars'
 
 html,
 button,
@@ -23,8 +19,19 @@ label
   display: block
 
 a
-  color: black
   text-decoration: none
+
+button
+  border: none
+
+button,
+a
+  background-color: $button-color
+  color: white
+  padding: 10px
+
+  &:active
+    background-color: black
 
 ul
   padding: 0
@@ -38,15 +45,6 @@ input
 
   &:focus
     outline: $border-color
-
-button
-  background-color: $button-color
-  color: white
-  border: none
-  padding: 10px
-
-  &:active
-    background-color: black
 
 header
   background-color: $box-color
