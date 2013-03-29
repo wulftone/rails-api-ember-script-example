@@ -12,8 +12,12 @@ textarea
   font-family: Aaargh, 'Helvetica Neue', Helvetica, Arial, sans-serif
 
 body
-  background: url('/assets/background.png') no-repeat center center fixed
-  background-size: cover
+  background: url('/assets/noise.png')
+  // background: url('/assets/background.png') no-repeat center center fixed
+  // background-size: cover
+
+#app
+  min-height: 100%
 
 label
   display: block
@@ -35,6 +39,7 @@ a
 
 ul
   padding: 0
+  margin: 0
 
   li
     list-style: none
@@ -52,10 +57,13 @@ header
   position: fixed
   top: 0
   width: 100%
+  height: 55px
   color: white
 
   .nav
     margin-left: 10px
+    position: relative
+    top: 16px
 
 footer
   background-color: $box-color
@@ -74,3 +82,61 @@ footer
 
 .box
   background-color: $box-color
+
+// Smartphones (portrait and landscape)
+@media only screen and (max-height : 430px)
+  header
+    position: relative
+
+  .container
+    margin-top: 5px
+
+  footer
+    margin-top: 40px
+    position: relative
+
+// Smartphones (landscape)
+@media only screen and (min-width : 321px)
+  // footer
+    // display: none
+
+// // Smartphones (portrait)
+@media only screen and (max-width : 320px)
+  // footer
+    // display: none
+
+
+// // iPads (portrait and landscape)
+// @media only screen
+// and (min-device-width : 768px)
+// and (max-device-width : 1024px)
+
+
+// // iPads (landscape)
+// @media only screen
+// and (min-device-width : 768px)
+// and (max-device-width : 1024px)
+// and (orientation : landscape)
+
+
+// // iPads (portrait)
+// @media only screen
+// and (min-device-width : 768px)
+// and (max-device-width : 1024px)
+// and (orientation : portrait)
+
+
+// // Desktops and laptops
+// @media only screen
+// and (min-width : 1224px)
+
+
+// // Large screens
+// @media only screen
+// and (min-width : 1824px)
+
+
+// // iPhone 4
+// @media
+// only screen and (-webkit-min-device-pixel-ratio : 1.5),
+// only screen and (min-device-pixel-ratio : 1.5)
