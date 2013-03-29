@@ -7,9 +7,11 @@
 #= require_self
 #= require store
 #= require routes
+#= require_tree ./routes
 #= require_tree ./controllers
 #= require_tree ./models
 #= require_tree ./templates
 #= require_tree ./views
 
-window.Es = Ember.Application.create()
+window.Es = Ember.Application.create
+  LOG_TRANSITIONS: true

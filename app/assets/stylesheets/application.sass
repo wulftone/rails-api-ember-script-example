@@ -1,4 +1,78 @@
-@import 'bootstrap'
+//= require normalize
+//= require boilerplate
+//= require_tree .
+
+$background-color: hsl(40, 61%, 60%)
+$box-color: hsl(124, 50%, 80%)
+$button-color: hsl(124, 50%, 20%)
+$border-color: hsl(122, 100%, 27%) 2px solid
+$shadow: 0 0 7px 0px black
+
+html,
+button,
+input,
+select,
+textarea
+  font-family: Aaargh, 'Helvetica Neue', Helvetica, Arial, sans-serif
 
 body
-  padding-top: 60px
+  background: url('/assets/background.png') no-repeat center center fixed
+  background-size: cover
+
+label
+  display: block
+
+a
+  color: black
+  text-decoration: none
+
+ul
+  padding: 0
+
+  li
+    list-style: none
+
+input
+  padding: 0
+  border: none
+
+  &:focus
+    outline: $border-color
+
+button
+  background-color: $button-color
+  color: white
+  border: none
+  padding: 10px
+
+  &:active
+    background-color: black
+
+header
+  background-color: $box-color
+  box-shadow: $shadow
+  position: fixed
+  top: 0
+  width: 100%
+  color: white
+
+  .nav
+    margin-left: 10px
+
+footer
+  background-color: $box-color
+  box-shadow: $shadow
+  bottom: 0
+  font-size: 0.9em
+  padding: 5px
+  position: fixed
+  text-align: center
+  width: 100%
+
+.container
+  width: auto
+  margin-top: 60px
+  padding: 5px
+
+.box
+  background-color: $box-color
